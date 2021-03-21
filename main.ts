@@ -20,6 +20,8 @@ namespace Tinybit {
         OFF = 0,
         //% blockId="Red" block="Red"
         Red,
+        //% blockId="Orange" block="Orange"
+        Orange,
         //% blockId="Green" block="Green"
         Green,
         //% blockId="Blue" block="Blue"
@@ -207,6 +209,10 @@ namespace Tinybit {
             }
             case enColor.Red: {
                 setPwmRGB(255, 0, 0);
+                break;
+            }
+            case enColor.Orange: {
+                setPwmRGB(255, 153, 0);
                 break;
             }
             case enColor.Green: {
